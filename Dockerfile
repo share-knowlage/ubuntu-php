@@ -12,4 +12,4 @@
 FROM ubuntu:18.04
 COPY ./install.sh /
 RUN /install.sh > /dev/null
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/bash", "-c"]
